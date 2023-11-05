@@ -1,7 +1,136 @@
 .footer-contenedor{
     background-color: #846851;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 .contacto-container{
-    width: 50%;
+    flex: 1;
+    padding-top: 30px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Mensaje{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.boton-form{
+    background-color: #C6B399;
+    color: #846851;
+    width: 150px !important; 
+    border: none;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+    .boton-form{
+        width: 130px !important;
+    }
+    .contacts{
+        font-size: 35px !important;
+    }
     
+    .text-contact{
+
+        margin-left: 10px !important;
+        margin-top: 12px !important;
+        font-size: 20px !important;
+    }
+
+    .RedSocial{
+        font-size: 35px !important;
+    }
+}
+@media screen and (max-width: 1156px) {
+    .boton-form{
+        width: 110px !important;
+    }
+    .contacts{
+        font-size: 35px !important;
+    }
+    
+    .text-contact{
+
+        margin-left: 10px !important;
+        margin-top: 12px !important;
+        font-size: 20px !important;
+
+    }
+    .RedSocial{
+        font-size: 35px !important;
+    }
+}
+@media screen and (max-width: 960px) {
+    .boton-form{
+        width: 90px !important;
+    }
+    .contacts{
+        font-size: 35px !important;
+    }
+    
+    .text-contact{
+
+        margin-left: 10px !important;
+        margin-top: 12px !important;
+        font-size: 20px !important;
+
+    }
+
+    .RedSocial{
+        font-size: 35px !important;
+    }   
+}
+@media screen and (max-width: 870PX) {
+    .boton-form{
+        width: 70px !important;
+    }
+    .contacts{
+        font-size: 30px !important;
+    }
+    
+    .text-contact{
+
+        margin-left: 10px !important;
+        margin-top: 10px !important;
+        font-size: 16px !important;
+
+    }
+
+    .RedSocial{
+        font-size: 30px !important;
+    }
+}
+
+.redesSociales-container{
+    flex: 1;
+    margin-top: 20px;
+    border-left: 3px solid #C6B399;
+    height: 90%;
+}
+
+
+.contacts{
+    font-size: 35px;
+    display: flex;
+}
+
+.text-contact{
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.RedSocial{
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.RedSocial i{
+    margin-right: 20px;
 }
