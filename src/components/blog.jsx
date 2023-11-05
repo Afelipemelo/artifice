@@ -2,11 +2,16 @@ import {CONSTANTES} from '../constant/const.ts';
 import React,{Fragment, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/blog.css';
-import {Card, CardImg} from 'react-bootstrap';
+import {Card, CardImg, Button} from 'react-bootstrap';
 import NavCard from './navCard.jsx';
 import { NavLink } from 'react-router-dom';
 import CARDIMAGEN from '../assets/image/MAR/IMG_5992.webp'
 function Blog() {
+  const [expandir, setExpandir] = useState(false);
+
+  const toggleExpandir = () => {
+    setExpandir(!expandir);
+  };
   return (
     <Fragment>
       <NavCard/>
@@ -16,7 +21,17 @@ function Blog() {
           <Card.Body>
             <Card.Title>{CONSTANTES.TITULO_CONSEJO}</Card.Title>
             <Card.Text>{CONSTANTES.TEXTO_BLOG}</Card.Text>
+            {expandir && (
+              <div>
+                {CONSTANTES.TEXTO_BLOG}
+              </div>
+            )}
           </Card.Body>
+          <Card.Footer>
+          <Button variant="info" onClick={toggleExpandir}>
+            {expandir ? 'Ocultar' : 'Expandir'}
+          </Button>
+      </Card.Footer>
         </Card>
         <Card style={{ width: '18rem', padding: '0' }} data-category='Tendencia' className='m-3'>
           <Card.Img src={CARDIMAGEN} className='imgCard'></Card.Img>
