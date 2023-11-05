@@ -9,8 +9,6 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    top: 0;
-    z-index: 20;
   }
   
   .nav-container-Card {
