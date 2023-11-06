@@ -8,6 +8,6 @@ export abstract class  CONSTANTES {
     static readonly DIRECCION : string = 'cll. 4f #39b - 20 / bogota - colombia'
     static readonly TITULO_CONSEJO : string = 'Consejos'
     static readonly TITULO_DISEÑO : string = 'Diseños'
-    static readonly TITULO_TENDENCIA : string = 'Reseña'
+    static readonly TITULO_TENDENCIA : string = 'Tendencia'
     static readonly TEXTO_BLOG : string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer urna eros, facilisis tempor tempor bibendum, posuere vitae enim. Sed commodo pharetra massa eu pulvinar. '
 }
