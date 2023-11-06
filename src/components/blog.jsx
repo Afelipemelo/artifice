@@ -1,59 +1,56 @@
 import {CONSTANTES} from '../constant/const.ts';
-import React,{Fragment, useState} from 'react';
+import React,{Fragment, useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/blog.css';
-import {Card, CardImg, Button} from 'react-bootstrap';
-import NavCard from './navCard.jsx';
+import {Card, Modal, Button} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import CARDIMAGEN from '../assets/image/MAR/IMG_5992.webp'
-function Blog() {
-  const [expandir, setExpandir] = useState(false);
-
-  const toggleExpandir = () => {
-    setExpandir(!expandir);
+import NOTICIAS from '../noticias.json';
+function Blog({idNoticia}) {
+  const [mostrarModal, setMostrarModal] = useState(false);
+  const [noticias, setNoticias] = useState([])
+  useEffect(() => {
+    if (idNoticia != 4){
+      const noticia = NOTICIAS.filter(n => n.idNoticia == idNoticia)
+      setNoticias(noticia)
+    }else{
+      setNoticias(NOTICIAS)
+    }
+    
+  },[idNoticia])
+  const toggleModal = (n) => {
+    console.log(n)
+    setMostrarModal(!mostrarModal);
   };
   return (
     <Fragment>
-      <NavCard/>
       <div className='row' id='Cards'>
-        <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-3'>
-          <Card.Img src={CARDIMAGEN} className='imgCard'></Card.Img>
-          <Card.Body>
-            <Card.Title>{CONSTANTES.TITULO_CONSEJO}</Card.Title>
-            <Card.Text>{CONSTANTES.TEXTO_BLOG}</Card.Text>
-            {expandir && (
-              <div>
-                {CONSTANTES.TEXTO_BLOG}
-              </div>
-            )}
-          </Card.Body>
-          <Card.Footer>
-          <Button variant="info" onClick={toggleExpandir}>
-            {expandir ? 'Ocultar' : 'Expandir'}
-          </Button>
-      </Card.Footer>
-        </Card>
-        <Card style={{ width: '18rem', padding: '0' }} data-category='Tendencia' className='m-3'>
-          <Card.Img src={CARDIMAGEN} className='imgCard'></Card.Img>
-          <Card.Body>
-            <Card.Title>{CONSTANTES.TITULO_TENDENCIA}</Card.Title>
-            <Card.Text>{CONSTANTES.TEXTO_BLOG}</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem', padding: '0' }} data-category='Diseño' className='m-3'>
-          <Card.Img src={CARDIMAGEN} className='imgCard'></Card.Img>
-          <Card.Body>
-            <Card.Title>{CONSTANTES.TITULO_DISEÑO}</Card.Title>
-            <Card.Text>{CONSTANTES.TEXTO_BLOG}</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem', padding: '0' }} data-category='Diseño' className='m-3'>
-          <Card.Img src={CARDIMAGEN} className='imgCard'></Card.Img>
-          <Card.Body>
-            <Card.Title>{CONSTANTES.TITULO_DISEÑO}</Card.Title>
-            <Card.Text>{CONSTANTES.TEXTO_BLOG}</Card.Text>
-          </Card.Body>
-        </Card>
+        {noticias.map((noticia)=> (
+            <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-3'>
+              <Card.Img src={noticia.imagen} key={noticia.idNoticia} className='imgCard'></Card.Img>
+              <Card.Body>
+                <Card.Title>{noticia.titulo}</Card.Title>
+                <Card.Text>{noticia.texto}</Card.Text>
+              </Card.Body>
+              <Button variant="info" onClick={toggleModal(noticia.idNoticia)}>
+                Mostrar Más
+              </Button>
+            </Card>
+        ))}
+          <Modal show={mostrarModal} onHide={toggleModal}>
+            <Modal.Header closeButton>
+              <Modal.Title>{CONSTANTES.TITULO_DISEÑO}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Card.Img src={CARDIMAGEN}  className='imgCard'></Card.Img>
+              {CONSTANTES.TEXTO_BLOG}
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={toggleModal}>
+                Cerrar
+              </Button>
+            </Modal.Footer>
+          </Modal>
       </div>
     </Fragment>
   );
