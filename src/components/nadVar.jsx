@@ -32,7 +32,7 @@ const NadVar = () => {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/nosotros"
                 className="nav-links"
                 onClick={handleClick}
               >

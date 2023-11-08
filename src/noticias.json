@@ -1,66 +1,83 @@
 [
  {
     "idNoticia" : 1,
+    "id" : 1,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "diseño" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
     "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "https://imgs.search.brave.com/RGaNGpSEVcorhx3WiCDfhXVKuLlA4gij9jQ5KC6oDvU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZWNv/cmFpZGVhcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MTIvSW1hZ2UwMTk5/XzItMy03Njh4NDMy/LmpwZy53ZWJw"
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
     },
  {
     "idNoticia" : 1,
+    "id" : 2,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "diseño" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/oIk5BANk-eN7DEGIruVa0HcuOrcOl8aXbm1zDfCLDbY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2VyY2EtZWxlZ2Fu/dGUtZGVjb3JhY2lv/bi1jYXNhXzIzLTIx/NDkxNTM2OTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc"
     },
  {
     "idNoticia" : 1,
+    "id" : 3,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "diseño" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
     },
  {
     "idNoticia" : 2,
+    "id" : 4,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "tendencias" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
     "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
  },
  {
     "idNoticia" : 2,
+    "id" : 5,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "tendencias" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
  },
  {
     "idNoticia" : 2,
+    "id" : 6,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "tendencias" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
  },
  {
     "idNoticia" : 3,
+    "id" : 7,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "consejos" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
     "imagen" : "https://imgs.search.brave.com/oIk5BANk-eN7DEGIruVa0HcuOrcOl8aXbm1zDfCLDbY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2VyY2EtZWxlZ2Fu/dGUtZGVjb3JhY2lv/bi1jYXNhXzIzLTIx/NDkxNTM2OTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc"
  },
  {
     "idNoticia" : 3,
+    "id" : 8,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "consejos" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
  },
  {
     "idNoticia" : 3,
+    "id" : 9,
     "fecha" : "octubre 10 - 2023",
     "titulo" : "consejos" ,
     "texto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
-    "imagen" : "../assets/image/MAR/IMG_0718.webp"
+    "textoCompleto" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia odit quis iure harum porro fuga, aliquam consectetur reiciendis dolores, earum voluptatum ullam aliquid eligendi, recusandae voluptatibus corrupti tenetur? Fuga?",
+    "imagen" : "https://imgs.search.brave.com/PymbHc66DkMJTMuRnROFSKAj2oagDKFoVDcXIw-W7MQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/ZGVjb3JhY2lvbi1p/bnRlcmlvcmVzLWlu/c3BpcmFkYS1mb2xr/bG9yZS1tZXhpY2Fu/b18yMy0yMTUwNzEx/MzAxLmpwZz9zaXpl/PTYyNiZleHQ9anBn"
  }
 ]

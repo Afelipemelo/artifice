@@ -67,8 +67,9 @@ const NavCard = () => {
           </ul>
 
         </div>
-      </nav>
-      <Blog idNoticia={idNoticia} />
+        </nav>
+      <Blog idNoticia = {idNoticia}/>
+
       </Fragment>
      );
 }
