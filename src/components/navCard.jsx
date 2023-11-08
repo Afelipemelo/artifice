@@ -7,8 +7,12 @@ const NavCard = () => {
     const [click, setClick] = useState(false);
     const [idNoticia, setIdNoticia] = useState(4);
     const handleClick = () => setClick(!click);
+    const handleToggle = () => setClick(!click);
     const filterElements = (event) => {
-      setIdNoticia(event.target.id);
+      const newId = event.target.id;
+      if (newId !== idNoticia) {
+        setIdNoticia(newId);
+      }
     }
     return ( 
         <Fragment>
@@ -65,6 +69,7 @@ const NavCard = () => {
         </div>
         </nav>
       <Blog idNoticia = {idNoticia}/>
+
       </Fragment>
      );
 }

@@ -1,23 +1,25 @@
-import {CONSTANTES} from '../constant/const.ts';
 import React,{Fragment, useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/blog.css';
 import {Card, Modal, Button} from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import CARDIMAGEN from '../assets/image/MAR/IMG_5992.webp'
 import NOTICIAS from '../noticias.json';
+
 function Blog({idNoticia}) {
   const [mostrarModal, setMostrarModal] = useState(false);
   const [noticias, setNoticias] = useState([])
+
   const [noticiaModal, setnoticiaModal] = useState([])
+
   useEffect(() => {
-    if (idNoticia != 4){
-      const noticia = NOTICIAS.filter(n => n.idNoticia == idNoticia)
-      setNoticias(noticia)
+    
+    if (idNoticia !== 4){
+      const noticia = NOTICIAS.filter((n) => n.idNoticia === idNoticia);
+      setNoticias(noticia);
     }else{
       setNoticias(NOTICIAS)
     }
   },[idNoticia])
+
   
   const toggleModal = (id) => {
     if(id == 0){
@@ -34,6 +36,7 @@ function Blog({idNoticia}) {
       <div className='row' id='Cards'>
         {noticias.map((noticia)=> (
             <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-4'>
+          <>
               <Card.Img src={noticia.imagen} key={noticia.idNoticia} className='imgCard'></Card.Img>
               <Card.Body>
                 <Card.Title>{noticia.titulo}</Card.Title>
@@ -61,7 +64,9 @@ function Blog({idNoticia}) {
               </Button>
             </Modal.Footer>
           </Modal>
-      </div>
+          </>
+        ))}
+     </div>     
     </Fragment>
   );
 }
