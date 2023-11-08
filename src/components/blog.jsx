@@ -9,6 +9,7 @@ import NOTICIAS from '../noticias.json';
 function Blog({idNoticia}) {
   const [mostrarModal, setMostrarModal] = useState(false);
   const [noticias, setNoticias] = useState([])
+  const [noticiaModal, setnoticiaModal] = useState([])
   useEffect(() => {
     if (idNoticia != 4){
       const noticia = NOTICIAS.filter(n => n.idNoticia == idNoticia)
@@ -16,11 +17,17 @@ function Blog({idNoticia}) {
     }else{
       setNoticias(NOTICIAS)
     }
-    
   },[idNoticia])
-  const toggleModal = (n) => {
-    console.log(n)
-    setMostrarModal(!mostrarModal);
+  
+  const toggleModal = (id) => {
+    if(id == 0){
+      setMostrarModal(!mostrarModal);
+      console.log(noticiaModal)
+    }else{
+      const modal = NOTICIAS.filter(n => n.id == id)
+      setnoticiaModal(modal[0])
+      setMostrarModal(!mostrarModal);
+    }
   };
   return (
     <Fragment>
@@ -32,18 +39,19 @@ function Blog({idNoticia}) {
                 <Card.Title>{noticia.titulo}</Card.Title>
                 <Card.Text>{noticia.texto}</Card.Text>
               </Card.Body>
-              <Button variant="info" onClick={toggleModal(noticia.idNoticia)}>
+              <Button variant="info" onClick={()=>toggleModal(noticia.id)}>
                 Mostrar Más
               </Button>
             </Card>
         ))}
-          <Modal show={mostrarModal} onHide={toggleModal}>
+
+        <Modal show={mostrarModal} onHide={()=>toggleModal(0)}>
             <Modal.Header closeButton>
-              <Modal.Title>{CONSTANTES.TITULO_DISEÑO}</Modal.Title>
+              <Modal.Title>{noticiaModal.titulo}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <Card.Img src={CARDIMAGEN}  className='imgCard'></Card.Img>
-              {CONSTANTES.TEXTO_BLOG}
+              <Card.Img src={noticiaModal.imagen}  className='imgCard'></Card.Img>
+              {noticiaModal.textoCompleto}
             </Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={toggleModal}>
