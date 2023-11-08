@@ -36,7 +36,6 @@ function Blog({idNoticia}) {
       <div className='row' id='Cards'>
         {noticias.map((noticia)=> (
             <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-4'>
-          <>
               <Card.Img src={noticia.imagen} key={noticia.idNoticia} className='imgCard'></Card.Img>
               <Card.Body>
                 <Card.Title>{noticia.titulo}</Card.Title>
@@ -64,8 +63,6 @@ function Blog({idNoticia}) {
               </Button>
             </Modal.Footer>
           </Modal>
-          </>
-        ))}
      </div>     
     </Fragment>
   );
