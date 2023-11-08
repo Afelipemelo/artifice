@@ -1,9 +1,17 @@
 #Cards{
-    margin-left: 2%;
+    margin-left: 5%;
     margin-right: 0%;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .imgCard{
     background-size: cover;
     
+}
+.botton-container{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

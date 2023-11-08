@@ -33,15 +33,17 @@ function Blog({idNoticia}) {
     <Fragment>
       <div className='row' id='Cards'>
         {noticias.map((noticia)=> (
-            <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-3'>
+            <Card style={{ width: '18rem', padding: '0' }} data-category='consejo' className='m-4'>
               <Card.Img src={noticia.imagen} key={noticia.idNoticia} className='imgCard'></Card.Img>
               <Card.Body>
                 <Card.Title>{noticia.titulo}</Card.Title>
                 <Card.Text>{noticia.texto}</Card.Text>
               </Card.Body>
-              <Button variant="info" onClick={()=>toggleModal(noticia.id)}>
-                Mostrar Más
-              </Button>
+              <div className='botton-container'>
+                <Button variant="primary" style={{color : "#ffff", backgroundColor : '#736357', border : '#736357'}} onClick={()=>toggleModal(noticia.id)}>
+                  Mostrar Más
+                </Button>
+              </div>
             </Card>
         ))}
 
@@ -54,7 +56,7 @@ function Blog({idNoticia}) {
               {noticiaModal.textoCompleto}
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary" onClick={toggleModal}>
+              <Button variant="primary" style={{color : "#ffff", backgroundColor : '#736357', border : '#736357'}} onClick={toggleModal}>
                 Cerrar
               </Button>
             </Modal.Footer>

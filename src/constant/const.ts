@@ -5,6 +5,10 @@ export abstract class  CONSTANTES {
     static readonly TITULO_CONTACTO : string = 'CONTACTA CON NOSTROS';
     static readonly CORREO : string = 'artificieinteriordesign@gmail.com'
     static readonly TELEFONO : string = '3184394048'
+    static readonly ACERCA_NOSOTROS : string = 'ACERCA DE NOSOTROS'
+    static readonly VISION : string = 'VISION'
+    static readonly MISION : string = 'MISION'
+    static readonly VALORES : string = 'VALORES EMPRESARIALES'
     static readonly DIRECCION : string = 'cll. 4f #39b - 20 / bogota - colombia'
     static readonly TITULO_CONSEJO : string = 'Consejos'
     static readonly TITULO_DISEÑO : string = 'Diseños'

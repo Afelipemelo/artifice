@@ -4,6 +4,7 @@ import NadVar from './components/nadVar';
 import Home from './components/home';
 import Footer from './components/footer';
 import NavCard from './components/navCard';
+import Nosotros from './components/nosotros';
 const App = () => {
     return ( 
         <Fragment>
@@ -13,6 +14,7 @@ const App = () => {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/home" element={<Home/>}></Route>
                     <Route path="/blog" element={<NavCard/>}></Route>
+                    <Route path="/nosotros" element={<Nosotros/>}></Route>
                 </Routes>
                 <Footer/>
             </Router>
